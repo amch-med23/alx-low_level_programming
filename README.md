@@ -1,1 +1,1 @@
-This is the repository, where i do the ALX C programming tasks.
+This is the repository where i do the ALX C programming tasks.
