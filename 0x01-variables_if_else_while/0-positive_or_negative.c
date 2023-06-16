@@ -3,6 +3,10 @@
 /* more headers goes there */
 #include <stdio.h>
 /* betty style doc for function main goes there */
+/**
+ *main - it's the main function of the program.
+ *Return: return (0), Success.
+ */
 int main(void)
 {
 	int n;
@@ -11,7 +15,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	if (n < 0)
-		printf("%d is negtive\n", n);
+		printf("%d is negative\n", n);
 	else if (n > 0)
 		printf("%d is positive\n", n);
 	else
