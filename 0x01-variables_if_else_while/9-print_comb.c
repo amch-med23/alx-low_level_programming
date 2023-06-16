@@ -10,20 +10,17 @@ int main(void)
 
 	i = 48;
 	/*44 = ','*/
+	/*32 = ' '*/
 	while (i <= 57)
 	{
-		if (i == 57)
+		putchar(i);
+		if (i != 57)
 		{
-			putchar(i);
+			putchar(',');
+			putchar(' ');
 		}
-		else
-		{
-			putchar(i);
-			putchar(44);
-			putchar(32);
-		}
-		
 		i++;
 	}
+	putchar('\n');
 	return (0);
 }
