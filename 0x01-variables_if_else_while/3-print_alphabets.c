@@ -8,13 +8,13 @@ int main(void)
 {
 	char alphabets = 'a';
 
-	while(alphabets <= 'z')
+	while (alphabets <= 'z')
 	{
 		putchar(alphabets);
 		alphabets++;
 	}
 	alphabets = 'A';
-	while(alphabets <= 'Z')
+	while (alphabets <= 'Z')
 	{
 		putchar(alphabets);
 		alphabets++;
