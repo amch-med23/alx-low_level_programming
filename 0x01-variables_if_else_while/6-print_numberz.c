@@ -4,7 +4,7 @@
  * Return: I's always (0), it means Success.
  */
 
-int main(void)
+int main (void)
 {
 	int i;
 
