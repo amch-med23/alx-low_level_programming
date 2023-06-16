@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- *
- *
+ * main - It's the main function for the program.
+ * Return: It's always return (0), Success.
  */
 
 int main(void)
@@ -12,13 +12,11 @@ int main(void)
 	{
 		for (b = 49; b <= 57; b++)
 		{
-			
-			
 			if (b > a)
 			{
 				putchar(a);
 				putchar(b);
-				if( a != 56 || b != 57)
+				if ( a != 56 || b != 57)
 				{
 					putchar(',');
 					putchar(' ');
