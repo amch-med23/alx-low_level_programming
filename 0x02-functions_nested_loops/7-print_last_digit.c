@@ -20,7 +20,7 @@ int print_last_digit(int i)
 		b = i * (-1);
 		result = b % 10;
 		cc = (int) (ch);
-		return (_putchar(result - cc));
+		return (_putchar(result + cc));
 	}
 	else
 	{
@@ -29,6 +29,6 @@ int print_last_digit(int i)
 
 		cc = (int) (ch);
 		result = i % 10;
-		return (_putchar(result - cc));
+		return (_putchar(result + cc));
 	}
 }
