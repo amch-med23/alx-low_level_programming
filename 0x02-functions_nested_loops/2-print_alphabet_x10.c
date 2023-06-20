@@ -1,3 +1,4 @@
+#include "main.h"
 void print_alphabet_x10(void)
 {
 	int i;
@@ -12,7 +13,7 @@ void print_alphabet_x10(void)
 			putchar(c);
 			c++;
 		}
-		putcahr('\n');
+		putchar('\n');
 		i++;
 	}
 }
