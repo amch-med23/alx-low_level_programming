@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	char pchar[9] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\0'};
+	char pchar[10] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\0', '\n'};
 	int i = 0;
 
 	while (i < 9)
@@ -14,6 +14,5 @@ int main(void)
 		putchar(pchar[i]);
 		i++;
 	}
-	putchar('\n');
 	return (0);
 }
