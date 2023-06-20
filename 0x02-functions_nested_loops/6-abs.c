@@ -10,20 +10,20 @@ int _abs(int i)
 {
 	if (i > 0)
 	{
-		_putchar(i);
+		_putchar(i - '0');
 		return (0);
 	}
 	else if (i < 0)
 	{
-		int b;
+		unsigned int b;
 		
 		b = i * (-1);
-		_putchar(b);
+		_putchar(b - '0');
 		return (0);
 	}
-	else
+	else if (i == 0)
 	{
-		_putchar(i);
+		_putchar(i - '0');
 		return (0);
 	}
 }
