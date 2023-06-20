@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * main - the entry point.
- * Return: It's (0).
  * print_alphabet - prints the alphabets from a to z in lowercase.
- * Description: this function uses two putchar functions to print alphabets from 'a' to 'z'.
+ * Description: this function uses two putchar functions to print 
+ * alphabets from 'a' to 'z'.
  */
+/*the function to print the alphabets*/
 void print_alphabet(void)
 {
 	char c;
