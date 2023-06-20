@@ -25,7 +25,6 @@ int print_last_digit(int i)
 	{
 		char ch = '0';
 
-		cc = (int) (ch);
 		result = i % 10;
 		_putchar(result + ch);
 		return (result);
