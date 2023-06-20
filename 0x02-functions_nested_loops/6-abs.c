@@ -15,7 +15,7 @@ int _abs(int i)
 	}
 	else if (i < 0)
 	{
-		unsigned int b;
+		int b;
 		
 		b = i * (-1);
 		_putchar(b - '0');
