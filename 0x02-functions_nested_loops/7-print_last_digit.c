@@ -22,6 +22,6 @@ int print_last_digit(int i)
 	else
 	{
 		result = i % 10;
-		return (_puchar(result + '0'));
+		return (_putchar(result + '0'));
 	}
 }
