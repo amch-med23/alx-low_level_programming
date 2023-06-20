@@ -9,18 +9,21 @@
 int print_last_digit(int i)
 {
 	int result;
+	int k;
 
-	if (i < 0 )
+	if (i < 0)
 	{
 		int b;
-
+		
 		b = i * -1;
 		result = b % 10;
-		return (result);
+		k = _putchar(result);
+		return (k);
 	}
 	else
 	{
 		result = i % 10;
-		return (result);
+		k = _putchar(result);
+		return (k);
 	}
 }
