@@ -3,9 +3,8 @@
  * main - the entry point.
  * Return: It's (0).
  * print_alphabet - prints the alphabets from a to z in lowercase.
+ * Description: this function uses two putchar functions to print alphabets from 'a' to 'z'.
  */
-/* declaring the function print_alphabet */
-/*void print_alphabet(void);*/
 void print_alphabet(void)
 {
 	char c;
@@ -17,5 +16,4 @@ void print_alphabet(void)
 		c++;
 	}
 	putchar('\n');
-	return;
 }
