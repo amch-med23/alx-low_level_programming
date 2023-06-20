@@ -14,7 +14,6 @@ int print_last_digit(int i)
 	if (i < 0)
 	{
 		int b;
-		int cc;
 		char ch = '0';
 
 		b = i * (-1);
@@ -24,7 +23,6 @@ int print_last_digit(int i)
 	}
 	else
 	{
-		int cc;
 		char ch = '0';
 
 		cc = (int) (ch);
