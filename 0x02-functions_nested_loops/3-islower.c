@@ -1,4 +1,5 @@
 #include "main.h"
+#include "_putchar.c"
 /**
  * _islower - checks is a haracter is lowercase or not.
  * Return: it's (0) for lowercase, and (1) for uppercase.
