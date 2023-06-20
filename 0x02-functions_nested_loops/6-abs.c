@@ -21,7 +21,7 @@ int _abs(int i)
 		_putchar(b - '0');
 		return (0);
 	}
-	else if (i == 0)
+	else
 	{
 		_putchar(i - '0');
 		return (0);
