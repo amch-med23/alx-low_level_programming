@@ -10,20 +10,17 @@ int _abs(int i)
 {
 	if (i > 0)
 	{
-		putchar(i + '0');
-		return (0);
+		return (i);
 	}
 	else if (i < 0)
 	{
 		int b;
 
 		b = i * -1;
-		putchar(b + '0');
-		return (0);
+		return (b);
 	}
 	else
 	{
-		putchar(i + '0');
-		return (0);
+		return (i);
 	}
 }
