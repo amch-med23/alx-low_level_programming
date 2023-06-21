@@ -8,7 +8,7 @@ int main(void)
 {
 	unsigned long int sum;
 	unsigned long int counter;
-	unsigned long int prev1, prev2, tmp, sumtmp;
+	unsigned long int prev1, prev2, sumtmp;
 
 	prev1 = 0;
 	prev2 = 1;
