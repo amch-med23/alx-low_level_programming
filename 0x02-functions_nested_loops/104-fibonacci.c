@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	unsigned long int sum, prev1, prev2;
+	unsigned long sum, prev1, prev2;
 	int counter;
 	unsigned long fib1_1, fib1_2, fib2_1, fib2_2;
 	unsigned long v1, v2;
@@ -25,11 +25,11 @@ int main(void)
 	fib2_1 = prev2 / MAX_VALUE;
 	fib1_2 = prev1 % MAX_VALUE;
 	fib2_2 = prev2 % MAX_VALUE;
-	for (counter = 93; counter <= 99; counter++)
+	for (counter = 93; counter < 99; counter++)
 	{
 		v1 = fib1_1 + fib2_1;
 		v2 = fib1_2 + fib2_2;
-		if (v2 <= MAX_VALUE)
+		if (v2 >= MAX_VALUE)
 		{
 			v1 += 1;
 			v2 %= MAX_VALUE;
