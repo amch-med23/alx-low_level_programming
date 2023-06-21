@@ -11,11 +11,11 @@ int main(void)
 
 	prev1 = 1;
 	prev2 = 0;
-	for (counter = 0; counter < 99 ; counter++)
+	for (counter = 0; counter < 98 ; counter++)
 	{
 		sum = prev1 + prev2;
 		printf("%lu, ", sum);
-		if (counter == 98)
+		if (counter == 97)
 		{
 			printf("%lu\n", sum);
 		}
