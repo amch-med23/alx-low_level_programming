@@ -8,6 +8,7 @@ void times_table(void)
 {
 	int i;
 	int k;
+	int z;
 	int res;
 	int arr[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
@@ -16,7 +17,7 @@ void times_table(void)
 	{
 		k = 0;
 		res = 0;
-		int z = 0;
+		z = 0;
 		while (k < 10)
 		{
 			res = arr[i] * arr[k];
