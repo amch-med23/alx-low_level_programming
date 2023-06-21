@@ -12,18 +12,20 @@ int main(void)
 	prev2 = 0;
 	for (i = 1; i <= 50; i++)
 	{
+		if (a = 2)
+		{
+			prev2 = prev1 - 1;
+		}
+		else if (a > 3)
+		{
+			prev2 += prev1 ;
+		}
 		if (i == 1)
 		{
+			prev2 = 0;
 			prev1 = 1;
-		} else if (i == 2)
-		{
-			prev2 = 1;
 		}
-		else if (i > 2)
-		{
-			prev1 += prev2;
-		}
-		a = prev2 + prev1;
+		a = prev1 + prev2;
 		if (i == 50)
 		{
 			printf("%d\n", a);
