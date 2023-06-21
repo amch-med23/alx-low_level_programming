@@ -14,11 +14,11 @@ int main(void)
 	{
 		if (a == 2)
 		{
-			prev2 = prev1 - 1;
+			prev2 = prev1;
 		}
-		else if (a > 3)
+		else if (a > 2)
 		{
-			prev2 += prev1 ;
+			prev2 = prev1 - i;
 		}
 		if (i == 1)
 		{
