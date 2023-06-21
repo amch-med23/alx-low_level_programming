@@ -8,7 +8,7 @@ int main(void)
 {
 	unsigned long int sum;
 	unsigned long int counter;
-	unsigned long int prev1, prev2;
+	unsigned long int prev1, prev2, tmp, sumtmp;
 
 	prev1 = 0;
 	prev2 = 1;
@@ -17,9 +17,6 @@ int main(void)
 		sum = prev1 + prev2;
 		prev2 = prev1;
 		prev1 = sum;
-		int tmp;
-		int sumtmp;
-
 		tmp = sum % 2;
 		sumtmp = 0;
 		if(tmp != 0)
