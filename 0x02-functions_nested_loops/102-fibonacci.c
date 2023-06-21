@@ -27,7 +27,7 @@ int main(void)
 		}
 		printf("%d, ", a);
 		prev1 = a;
-		prev2 = prev1 - a;
+		prev2 = a - prev1;
 	}
 	return (0);
 }
