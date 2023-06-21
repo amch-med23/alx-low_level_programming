@@ -81,6 +81,7 @@ void times_table(void)
 						}
 					}
 				}
+			}
 			k++;
 			z++;
 		}
