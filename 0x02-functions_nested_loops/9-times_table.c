@@ -50,7 +50,7 @@ void times_table(void)
 					_putchar(',');
 				}
 			}
-			else if (k > 9 && i > 9 && res != 0)
+			else if (k >= 9 && i >= 10 && res != 0)
 			{
 				int a, b;
 
