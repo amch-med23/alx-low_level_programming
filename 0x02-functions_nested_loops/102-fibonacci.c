@@ -15,10 +15,8 @@ int main(void)
 	{
 		if (i == 1)
 		{
-			prev2 = 0;
 			prev1 = 1;
 		}
-		prev1 = prev2;
 		a = prev1 + prev2;
 		if (i == 50)
 		{
@@ -26,6 +24,7 @@ int main(void)
 			return (0);
 		}
 		printf("%lu, ", a);
+		prev2 = prev1;
 		prev1 = a;
 	}
 	return (0);
