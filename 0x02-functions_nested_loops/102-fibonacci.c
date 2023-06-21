@@ -6,11 +6,11 @@
 
 int main(void)
 {
-	int a, prev, i;
+	int a, prev, b, i;
 
 	b = 0;
 	prev = b;
-	for (i = 1; i <= 50; i++);
+	for (i = 1; i <= 50; i++)
 	{
 		a = prev + i;
 		printf("%d, ", a);
