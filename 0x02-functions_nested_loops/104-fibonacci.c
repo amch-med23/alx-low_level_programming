@@ -8,18 +8,18 @@
 int main(void)
 {
 	unsigned long int sum, prev1, prev2;
-	unsigned long int counter;
+	int counter;
 	unsigned long fib1_1, fib1_2, fib2_1, fib2_2;
 	unsigned long v1, v2;
 
-	prev1 = 1;
-	prev2 = 0;
+	prev1 = 0;
+	prev2 = 1;
 	for (counter = 0; counter <= 92 ; counter++)
 	{
 		sum = prev1 + prev2;
 		printf("%lu, ", sum);
-		prev2 = prev1;
-		prev1 = sum;
+		prev1 = prev2;
+		prev2 = sum;
 	}
 	fib1_1 = prev1 / MAX_VALUE;
 	fib2_1 = prev2 / MAX_VALUE;
