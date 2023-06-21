@@ -20,7 +20,7 @@ int main(void)
 			printf("%lu\n", sum);
 		}
 		prev2 = prev1;
-		sum = prev1;
+	        prev1 = sum;
 	}
 	return (0);
 }
