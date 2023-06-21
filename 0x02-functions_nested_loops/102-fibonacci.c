@@ -19,7 +19,7 @@ int main(void)
 			prev = 0;
 		}
 		a = prev + i;
-		else if (i == 50)
+		if (i == 50)
 		{
 			printf("%d\n", a);
 			return (0);
