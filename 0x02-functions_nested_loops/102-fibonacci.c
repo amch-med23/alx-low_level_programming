@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	int a, prev, prev2, i;
+	int a, prev1, prev2, i;
 
 	prev1 = 0;
 	prev2 = 0;
