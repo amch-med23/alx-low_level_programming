@@ -19,7 +19,7 @@ void times_table(void)
 		while (k < 10)
 		{
 			res = arr[i] * arr[k];
-			if (k < 9 && i < 9)
+			if (k < 9 && i < 10)
 			{
 				if (res >= 10)
 				{
@@ -52,7 +52,7 @@ void times_table(void)
 				if (a != b)
 				{
 					_putchar(' ');
-					_putchar(a + '0');
+					_putchar(' ');
 					_putchar(b + '0');
 				}
 				else
