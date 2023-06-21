@@ -6,13 +6,24 @@
 
 int main(void)
 {
-	int a, prev, b, i;
+	int a, prev, i;
 
-	b = 0;
-	prev = b;
+	prev = 0;
 	for (i = 1; i <= 50; i++)
 	{
+		if (i == 1)
+		{
+			prev = 0;
+		} else if (i == 2)
+		{
+			prev = 0;
+		}
 		a = prev + i;
+		else if (i == 50)
+		{
+			printf("%d\n", a);
+			return (0);
+		}
 		printf("%d, ", a);
 		prev = a;
 	}
