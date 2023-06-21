@@ -51,15 +51,16 @@ void times_table(void)
 				b = res % 10;
 				if (a != b)
 				{
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(b + '0');
-				}
-				else
-				{
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(res + '0');
+					if (a == 0)
+					{
+						_putcahr(b + '0');
+					}
+					else
+					{
+						_putchar(' ');
+						_putchar(a + '0');
+						_putchar(b + '0');
+					}
 				}
 			}
 			k++;
