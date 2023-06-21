@@ -12,13 +12,13 @@ int main(void)
 
 	prev1 = 0;
 	prev2 = 1;
+	sumtmp = 0;
 	for (counter = 1; counter <= 4000000; counter++)
 	{
 		sum = prev1 + prev2;
 		prev2 = prev1;
 		prev1 = sum;
-		tmp = sum % 2;
-		if (tmp == 0)
+		if ((sum % 2) == 0)
 		{
 			sumtmp += sum;
 		}
