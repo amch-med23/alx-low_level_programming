@@ -16,6 +16,7 @@ void times_table(void)
 	{
 		k = 0;
 		res = 0;
+		int z = 0;
 		while (k < 10)
 		{
 			res = arr[i] * arr[k];
@@ -28,12 +29,10 @@ void times_table(void)
 					_putchar((res % 10) + '0');
 					_putchar(',');
 				}
-				else if (res == 0)
+				else if (res == 0 && z < 1)
 				{
 					_putchar(res + '0');
 					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
 				}
 				else if (res > 0 && res < 10)
 				{
@@ -42,6 +41,7 @@ void times_table(void)
 					_putchar(res + '0');
 					_putchar(',');
 				}
+				z++;
 			}
 			else 
 			{
