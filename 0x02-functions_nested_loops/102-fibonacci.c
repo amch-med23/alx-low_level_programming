@@ -19,6 +19,10 @@ int main(void)
 		{
 			prev2 = 1;
 		}
+		else if (i > 2)
+		{
+			prev1 += prev2;
+		}
 		a = prev2 + prev1;
 		if (i == 50)
 		{
@@ -27,7 +31,6 @@ int main(void)
 		}
 		printf("%d, ", a);
 		prev1 = a;
-		prev2 = a - prev1;
 	}
 	return (0);
 }
