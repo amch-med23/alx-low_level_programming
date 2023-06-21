@@ -18,7 +18,7 @@ int main(void)
 		sum = prev1 + prev2;
 		prev2 = prev1;
 		prev1 = sum;
-		if ( sum <= 4000000 && (sum % 2) == 0)
+		if (sum <= 4000000 && (sum % 2) == 0)
 		{
 			sumtmp += sum;
 		}
