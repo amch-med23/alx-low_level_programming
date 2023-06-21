@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	unsigned long int sum, prev1, prev2;
+	unsigned long long int sum, prev1, prev2;
 	unsigned long int counter;
 
 	prev1 = 1;
