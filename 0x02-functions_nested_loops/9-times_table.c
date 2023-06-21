@@ -35,7 +35,7 @@ void times_table(void)
 					_putchar(res + '0');
 					_putchar(',');
 				}
-				else if (res == 0 && z >= 1 && z < 9)
+				else if (res == 0 && z >= 1)
 				{
 					_putchar(' ');
 					_putchar(' ');
@@ -50,7 +50,7 @@ void times_table(void)
 					_putchar(',');
 				}
 			}
-			else 
+			else if (k > 9 && i > 9 && res != 0)
 			{
 				int a, b;
 
@@ -64,12 +64,6 @@ void times_table(void)
 						_putchar(' ');
 						_putchar(b + '0');
 					}
-					else if (res == 0)
-					{
-						_putchar(' ');
-						_putchar(' ');
-						_putchar(res + '0');
-					}
 					else
 					{
 						_putchar(' ');
@@ -77,6 +71,12 @@ void times_table(void)
 						_putchar(b + '0');
 					}
 				}
+			}
+			else if (k > 9 && i > 9 && res == 0)
+			{
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(res + '0');
 			}
 			k++;
 			z++;
