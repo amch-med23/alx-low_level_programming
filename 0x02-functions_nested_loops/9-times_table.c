@@ -19,27 +19,48 @@ void times_table(void)
 		while (k <= 10)
 		{
 			res = arr[i] * arr[k];
-			if (k < 9 && i < 9)
+			if (k <= 9 && i <= 9)
 			{
 				if (res >= 10)
 				{
+					_putchar(' ');
 					_putchar((res / 10) + '0');
 					_putchar((res % 10) + '0');
 					_putchar(',');
-					_putchar(' ');
 				}
-				else
+				else if (res == 0)
 				{
 					_putchar(res + '0');
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 				}
+				else if (res > 0 && res < 10)
+				{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(res + '0');
+					_putchar(',');
+				}
 			}
-			else
+			else 
 			{
-				_putchar((res / 10) + '0');
-				_putchar((res % 10) + '0');
+				int a, b;
+
+				a = res / 10;
+				b = res % 10;
+				if (a != b)
+				{
+					_putchar(' ');
+					_putchar(a + '0');
+					_putchar(b + '0');
+				}
+				else
+				{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(res + '0');
+				}
 			}
 			k++;
 		}
