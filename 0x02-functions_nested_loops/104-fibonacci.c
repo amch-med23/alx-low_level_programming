@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	unsigned long long int sum, prev1, prev2;
+	unsigned long int sum, prev1, prev2;
 	unsigned long int counter;
 
 	prev1 = 1;
@@ -14,10 +14,10 @@ int main(void)
 	for (counter = 1; counter <= 98 ; counter++)
 	{
 		sum = prev1 + prev2;
-		printf("%llu, ", sum);
+		printf("%ll, ", sum);
 		if (counter == 98)
 		{
-			printf("%llu\n", sum);
+			printf("%ll\n", sum);
 		}
 		prev2 = prev1;
 		prev1 = sum;
