@@ -12,7 +12,7 @@ int main(void)
 	prev2 = 0;
 	for (i = 1; i <= 50; i++)
 	{
-		if (a = 2)
+		if (a == 2)
 		{
 			prev2 = prev1 - 1;
 		}
