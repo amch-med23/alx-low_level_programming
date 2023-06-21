@@ -14,12 +14,9 @@ int main(void)
 	{
 		b = a % 3;
 		c = a % 5;
-		if ( b == 0)
+		if (b == 0 || c == 0)
 		{
-			result += b;
-		} else if (c == 0)
-		{
-			result += c;
+			result += a;
 		}
 	}
 	printf("%d\n",result);
