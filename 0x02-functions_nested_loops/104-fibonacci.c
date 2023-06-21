@@ -29,7 +29,7 @@ int main(void)
 	{
 		v1 = fib1_1 + fib2_1;
 		v2 = fib1_2 + fib2_2;
-		if (v2 >= MAX_VALUE)
+		if (fib1_2 + fib2_2 >= MAX_VALUE)
 		{
 			v1 += 1;
 			v2 %= MAX_VALUE;
