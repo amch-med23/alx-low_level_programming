@@ -14,10 +14,10 @@ int main(void)
 	for (counter = 1; counter <= 98 ; counter++)
 	{
 		sum = prev1 + prev2;
-		printf("%lu, ", sum);
+		printf("%llu, ", sum);
 		if (counter == 98)
 		{
-			printf("%lu\n", sum);
+			printf("%llu\n", sum);
 		}
 		prev2 = prev1;
 		prev1 = sum;
