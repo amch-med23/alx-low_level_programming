@@ -9,8 +9,8 @@ int main(void)
 	unsigned long int sum, prev1, prev2;
 	unsigned long int counter;
 
-	prev1 = 0;
-	prev2 = 1;
+	prev1 = 1;
+	prev2 = 0;
 	for (counter = 0; counter < 99 ; counter++)
 	{
 		sum = prev1 + prev2;
