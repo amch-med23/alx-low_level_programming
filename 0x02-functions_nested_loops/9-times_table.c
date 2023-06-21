@@ -25,12 +25,12 @@ void times_table(void)
 				_putchar(',');
 				if (res >= 10)
 				{
-					_putchar(32);
+					_putchar(' ');
 				}
 				else
 				{
-					_putchar(32);
-					_putchar(32);
+					_putchar(' ');
+					_putchar(' ');
 				}
 			}
 			else
