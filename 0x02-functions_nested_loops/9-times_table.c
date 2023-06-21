@@ -21,14 +21,21 @@ void times_table(void)
 			res = arr[i] * arr[k];
 			if (k < 9 && i < 9)
 			{
-				_putchar(res + '0');
+				_putchar((res) + '0');
 				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
+				if (res >= 10)
+				{
+					_putchar(32);
+				}
+				else
+				{
+					_putchar(32);
+					_putcahr(32);
+				}
 			}
 			else
 			{
-				_putchar(res + '0');
+				_putchar((res) + '0');
 			}
 			k++;
 		}
