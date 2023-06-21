@@ -53,7 +53,7 @@ void times_table(void)
 				{
 					if (a == 0)
 					{
-						_putcahr(b + '0');
+						_putchar(b + '0');
 					}
 					else
 					{
