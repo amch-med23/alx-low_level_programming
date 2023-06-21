@@ -64,6 +64,11 @@ void times_table(void)
 						_putchar(' ');
 						_putchar(b + '0');
 					}
+					else if (res == 0)
+					{
+						_putchar(' ');
+						_putchar(' ');
+						_putchar(res + '0');
 					else
 					{
 						_putchar(' ');
