@@ -19,6 +19,6 @@ int main(void)
 			result += a;
 		}
 	}
-	printf("%d\n",result);
+	printf("%d\n", result);
 	return (0);
 }
