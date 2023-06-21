@@ -50,34 +50,37 @@ void times_table(void)
 					_putchar(',');
 				}
 			}
-			else if (k >= 9 && i >= 10 && res != 0)
+			else
 			{
-				int a, b;
-
-				a = res / 10;
-				b = res % 10;
-				if (a != b)
+				if (res == 0)
 				{
-					if (a == 0)
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(res + '0');
+				}
+				else
+				{
+					
+					int a, b;
+
+					a = res / 10;
+					b = res % 10;
+					if (a != b)
 					{
-						_putchar(' ');
-						_putchar(' ');
-						_putchar(b + '0');
-					}
-					else
-					{
-						_putchar(' ');
-						_putchar(a + '0');
-						_putchar(b + '0');
+						if (a == 0)
+						{
+							_putchar(' ');
+							_putchar(' ');
+							_putchar(b + '0');
+						}
+						else
+						{
+							_putchar(' ');
+							_putchar(a + '0');
+							_putchar(b + '0');
+						}
 					}
 				}
-			}
-			else if (k > 9 && i > 9 && res == 0)
-			{
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(res + '0');
-			}
 			k++;
 			z++;
 		}
