@@ -18,7 +18,6 @@ int main(void)
 		prev2 = prev1;
 		prev1 = sum;
 		tmp = sum % 2;
-		sumtmp = 0;
 		if (tmp == 0)
 		{
 			sumtmp += sum;
