@@ -19,7 +19,7 @@ void times_table(void)
 		while (k < 10)
 		{
 			res = arr[i] * arr[k];
-			if (k <= 9 && i <= 9)
+			if (k < 9 && i < 9)
 			{
 				if (res >= 10)
 				{
