@@ -35,6 +35,13 @@ void times_table(void)
 					_putchar(res + '0');
 					_putchar(',');
 				}
+				else if (res == 0 && z > 1 && z < 10)
+				{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(res + '0');
+					_putchar(',');
+				}
 				else if (res > 0 && res < 10)
 				{
 					_putchar(' ');
@@ -42,7 +49,6 @@ void times_table(void)
 					_putchar(res + '0');
 					_putchar(',');
 				}
-				z++;
 			}
 			else 
 			{
@@ -67,6 +73,7 @@ void times_table(void)
 				}
 			}
 			k++;
+			z++;
 		}
 		i++;
 		_putchar('\n');
