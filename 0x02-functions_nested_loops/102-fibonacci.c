@@ -6,32 +6,26 @@
 
 int main(void)
 {
-	int a, prev1, prev2, i;
+	int i;
+	unsigned long int a, prev1, prev2;
 
 	prev1 = 0;
 	prev2 = 0;
 	for (i = 1; i <= 50; i++)
 	{
-		if (a == 2)
-		{
-			prev2 = prev1;
-		}
-		else if (a > 2)
-		{
-			prev2 = prev1 - i;
-		}
 		if (i == 1)
 		{
 			prev2 = 0;
 			prev1 = 1;
 		}
+		prev1 = prev2;
 		a = prev1 + prev2;
 		if (i == 50)
 		{
-			printf("%d\n", a);
+			printf("%lu\n", a);
 			return (0);
 		}
-		printf("%d, ", a);
+		printf("%lu, ", a);
 		prev1 = a;
 	}
 	return (0);
