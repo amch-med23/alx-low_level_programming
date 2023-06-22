@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _isupper - returns 1 if the parameter is Uppercase and
  * 0 if it is lowercase.
@@ -8,11 +9,13 @@
 
 int _isupper(int c)
 {
-	if (c >= 65 && c <= 90)
+	cahr B;
+	B = (char) c;
+	if (B >= 65 && B <= 90)
 	{
 		return (1);
 	}
-	else if (c >= 97 && c <= 122)
+	else if (B >= 97 && B <= 122)
 	{
 		return (0);
 	}
