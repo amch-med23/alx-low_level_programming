@@ -1,4 +1,3 @@
-#include "main.h"
 /**
  * _isupper - returns 1 if the parameter is Uppercase and
  * 0 if it is lowercase.
