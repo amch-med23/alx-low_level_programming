@@ -9,7 +9,7 @@
 
 int _isupper(int c)
 {
-	cahr B;
+	char B;
 	B = (char) c;
 	if (B >= 65 && B <= 90)
 	{
@@ -19,5 +19,4 @@ int _isupper(int c)
 	{
 		return (0);
 	}
-	return (0);
 }
