@@ -14,7 +14,7 @@ int main(void)
 	prev1 = 1;
 	prev2 = 2;
 	printf("%lu", prev1);
-	for (counter = 0; counter < 91 ; counter++)
+	for (counter = 1; counter < 91 ; counter++)
 	{
 		printf(", %lu", prev2);
 		prev2 += prev1;
