@@ -1,5 +1,4 @@
 #include <stdio.h>
-#define MAX_VALUE 1000000000
 /**
  * main - the Entry point.
  * Return: it returns (0), Success.
@@ -9,6 +8,7 @@ int main(void)
 {
 	unsigned long int prev1, prev2;
 	unsigned long int counter;
+	unsigned long int MAX_VALUE = 1000000000;
 	unsigned long int fib1_1, fib1_2, fib2_1, fib2_2;
 
 	prev1 = 1;
