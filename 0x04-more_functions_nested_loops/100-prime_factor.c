@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <math.h>
-int _isprime(int i);
 /**
  * main - the entry point.
  * Return: it return (0).
@@ -9,43 +8,27 @@ int _isprime(int i);
 
 int main(void)
 {
-	unsigned long int num;
+	long int num;
 	long int i;
-	long int m;
-	
-	i = 2;
+	long int max;
+
+	max = -1;
 	num = 612852475143;
-	m = num / i;
-	while (i <= m)
+	while (num % 2 == 0)
 	{
-		m = num / i;
-		if (num % m == 0 && _isprime(m) == 1)
-		{
-			printf("%li\n", m);
-		}
-		i++;
+		max = 2;
+		num /= 2;
 	}
+	for (i = 3; i <= sqrt(num); i = i + 2)
+	{
+		while (num % i == 0)
+		{
+			max = i;
+			num /= i;
+		}
+	}
+	if (num > 2)
+		max = num;
+	printf("%ld\n", max);
 	return (0);
-}
-
-/**
- * _isprime - a function determines if the number is prime. 
- * @i: the number to check.
- * Return: (1) if it's a prime number and (0) otherwisre.
- */
-
-int _isprime(int i)
-{
-	int k;
-
-	k = 2;
-	while (k < i / 2 + 1)
-	{
-		if (i % k == 0)
-		{
-			return (0);
-		}
-		k++;
-	}
-	return (1);
 }
