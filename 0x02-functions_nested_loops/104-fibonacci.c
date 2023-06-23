@@ -7,10 +7,9 @@
 
 int main(void)
 {
-	unsigned long int sum, prev1, prev2;
+	unsigned long int prev1, prev2;
 	unsigned long int counter;
 	unsigned long int fib1_1, fib1_2, fib2_1, fib2_2;
-	unsigned long int v1, v2;
 
 	prev1 = 1;
 	prev2 = 2;
