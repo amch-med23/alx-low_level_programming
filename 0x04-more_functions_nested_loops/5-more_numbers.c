@@ -6,30 +6,16 @@
 
 void more_numbers(void)
 {
-	int i, j, c;
-	int num[5] = {10, 11, 12, 13, 14};
+	int i, j;
 
-	i = 0;
-	while (i < 10)
+	for (i = 1; i <= 10; i++)
 	{
-		j = 48;
-		while (j < 58)
+		for (j = 0; j <= 14; j++)
 		{
-			_putchar(j);
-			if (j == 57)
-			{
-				c = 0;
-				while (c < 5)
-				{
-					_putchar((num[c] / 10) + '0');
-					_putchar((num[c] % 10) + '0');
-					c++;
-				}
-				
-			}
-			j++;
+			if (j >= 10)
+				_putchar('1');
+			_putchar (j % 10 + '0');
 		}
-		i++;
-		_putchar('\n');
+			_putchar('\n');
 	}
 }
