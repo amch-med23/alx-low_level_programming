@@ -1,0 +1,1 @@
+This is the Project 0x05-pointers_arrays_strings, where we will learn about pointers and arrays and strings in C.
