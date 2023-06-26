@@ -6,12 +6,17 @@
 
 int _strlen(char *s)
 {
-	int size_of_string;
-	int size_of_int;
 	int total_length;
+	int i;
 
-	size_of_string = sizeof(s);
-	size_of_int = sizeof(int);
-	total_length = size_of_string / size_of_int;
+	i = 0;
+	while (s[i] != '\0')
+	{
+		if (s[i] != '\0')
+		{
+			i++;
+		}
+	}
+	total_lenght = i + 1;
 	return (total_length);
 }
