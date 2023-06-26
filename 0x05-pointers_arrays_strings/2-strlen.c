@@ -12,6 +12,6 @@ int _strlen(char *s)
 
 	size_of_string = sizeof(s);
 	size_of_int = sizeof(int);
-	total_length = size_of_string / size_of_length;
+	total_length = size_of_string / size_of_int;
 	return (total_length);
 }
