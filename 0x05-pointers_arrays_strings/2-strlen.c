@@ -17,6 +17,6 @@ int _strlen(char *s)
 			i++;
 		}
 	}
-	total_lenght = i + 1;
+	total_length = i + 1;
 	return (total_length);
 }
