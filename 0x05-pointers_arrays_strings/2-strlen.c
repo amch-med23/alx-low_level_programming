@@ -2,6 +2,8 @@
 /**
  * _strlen - defines the length of a string.
  * @s: the string that we want to calculate the longht to.
+ *
+ * Return: returns the length of the string
  */
 
 int _strlen(char *s)
@@ -17,6 +19,6 @@ int _strlen(char *s)
 			i++;
 		}
 	}
-	total_length = i + 1;
+	total_length = i;
 	return (total_length);
 }
