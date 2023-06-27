@@ -20,13 +20,10 @@ void print_rev(char *s)
 	}
 	string_length = i;
 	j = 0;
-	while (string_length >= j)
+	while (string_length >= j && s[string_lenght] != '\0')
 	{
-		if (s[string_length] != '\0')
-		{
-			_putchar(s[string_length]);
-			string_length--;
-		}
+		_putchar(s[string_length]);
+		string_length--;
 	}
 	_putchar('\n');
 }
