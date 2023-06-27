@@ -22,17 +22,9 @@ void rev_string(char *s)
 	k = 0;
 	while (string_length >= j)
 	{
-		if (s[string_length] == '\0')
-		{
-			s[k] = '\0';
-			k++;
-			string_length--;
-		}
-		else
-		{
-			s[k] = s[string_length];
-			k++;
-			string_length--;
-		}
+		s[k] = s[string_length];
+		k++;
+		string_length--;
 	}
+	_putchar('\0');
 }
