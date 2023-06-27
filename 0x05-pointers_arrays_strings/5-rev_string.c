@@ -7,6 +7,7 @@
 void rev_string(char *s)
 {
 	int i, j, string_length, k;
+	char revstr[string_length];
 
 	i = 0;
 	string_length = 0;
@@ -18,8 +19,6 @@ void rev_string(char *s)
 		}
 	}
 	string_length = i - 1;
-	char revstr[];
-
 	j = 0;
 	k = 0;
 	while (string_length >= j)
