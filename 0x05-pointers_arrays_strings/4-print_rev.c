@@ -18,9 +18,9 @@ void print_rev(char *s)
 			i++;
 		}
 	}
-	string_length = i;
+	string_length = i-1;
 	j = 0;
-	while (string_length >= j && s[string_length] != '\0')
+	while (string_length >= j)
 	{
 		_putchar(s[string_length]);
 		string_length--;
