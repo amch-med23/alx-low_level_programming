@@ -12,15 +12,18 @@ void rev_string(char *s)
 	string_length = 0;
 	while (s[i] != '\0')
 	{
-		if (s[i] != '\0')
-		{
-			i++;
-		}
+		i++;
 	}
 	string_length = i - 1;
 	k = 0;
-	while (string_length >= 0 && k <= i - 1)
+	while (string_length >= 0)
 	{
+		if (string_length == 0)
+		{
+			s[k] = s[0];
+			_putchar('\0');
+			break;
+		}
 		s[k] = s[string_length];
 		k++;
 		string_length--;
