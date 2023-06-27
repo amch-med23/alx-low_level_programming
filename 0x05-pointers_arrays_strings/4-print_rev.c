@@ -18,7 +18,7 @@ void print_rev(char *s)
 			i++;
 		}
 	}
-	string_length = i-1;
+	string_length = i - 1;
 	j = 0;
 	while (string_length >= j)
 	{
