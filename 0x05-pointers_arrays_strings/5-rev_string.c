@@ -18,13 +18,13 @@ void rev_string(char *s)
 		}
 	}
 	string_length = i - 1;
-	char revstr[string_length];
+	char revstr[];
 
 	j = 0;
 	k = 0;
 	while (string_length >= j)
 	{
-		revstr[k] = s[sting_length];
+		revstr[k] = s[string_length];
 		k++;
 		string_length--;
 	}
