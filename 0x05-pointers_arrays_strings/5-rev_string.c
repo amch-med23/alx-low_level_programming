@@ -17,13 +17,22 @@ void rev_string(char *s)
 			i++;
 		}
 	}
-	string_length = i;
+	string_length = i - 1;
 	j = 0;
 	k = 0;
 	while (string_length >= j)
 	{
-		s[k] = s[string_length];
-		k++;
-		string_length--;
+		if (s[string_lenght] = '\0')
+		{
+			s[k] = '\0';
+			k++;
+			string_length--;
+		}
+		else
+		{
+			s[k] = s[string_length];
+			k++;
+			string_length--;
+		}
 	}
 }
