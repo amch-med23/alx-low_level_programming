@@ -22,8 +22,11 @@ void print_rev(char *s)
 	j = 0;
 	while (string_length >= j)
 	{
-		_putchar(s[string_length]);
-		string_length--;
+		if (s[string_length] != '\0')
+		{
+			_putchar(s[string_length]);
+			string_length--;
+		}
 	}
 	_putchar('\n');
 }
