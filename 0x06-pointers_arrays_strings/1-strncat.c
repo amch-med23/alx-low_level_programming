@@ -2,7 +2,7 @@
 /**
  * _strncat - concatenates two strings with
  * the selection of the n bytes from the second string.
- * @des: the destination.
+ * @dest: the destination.
  * @src: the source.
  * @n: the number of bytes it's gonna take from the source.
  *
