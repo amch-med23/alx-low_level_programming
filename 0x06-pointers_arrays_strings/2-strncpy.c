@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strncpr - copies the string from src to dest
+ * _strncpy - copies the string from src to dest
  * in range of (n) bytes, if the src is less than
  * the n bytes the dest remaining bytes must hold
  * the value of '\0' to reach the full lenght of n bytes.
