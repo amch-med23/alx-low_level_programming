@@ -6,7 +6,7 @@
  * Return: it returns a string.
  */
 
-char *cap_string(char *c)
+char *string_toupper(char *c)
 {
 	int i;
 
