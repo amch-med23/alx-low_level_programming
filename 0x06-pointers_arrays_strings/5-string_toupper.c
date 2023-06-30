@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * cap_string - capitalizing a string.
+ * string_toupper - capitalizing a string.
  * @c: the string to capitalize.
  *
  * Return: it returns a string.
