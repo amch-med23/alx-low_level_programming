@@ -31,7 +31,7 @@ char *cap_string(char *s)
 		    s[i - 1] == '{' ||
 		    s[i - 1] == '}' ||
 		    i == 0)
-			s[i] = s[i] - 32;
+			s[i] -= 32;
 		i++;
 	}
 	return (s);
