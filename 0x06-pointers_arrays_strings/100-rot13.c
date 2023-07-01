@@ -11,15 +11,15 @@ int main(void)
 	char v[] = "ROT13 (\"rotate by 13 places\", sometimes hyphenated ROT-13) is a simple letter substitution cipher.\n";
 	char *g;
 
-	g = rot13(s);
+	g = rot13(v);
 	printf("%s", g);
 	printf("------------------------------------\n");
-	printf("%s", s);
+	printf("%s", v);
 	printf("------------------------------------\n");
 	g = rot13(v);
 	printf("%s", g);
 	printf("------------------------------------\n");
-	printf("%s", s);
+	printf("%s", v);
 	printf("------------------------------------\n");
 	g = rot13(v);
 	printf("%s", g);
