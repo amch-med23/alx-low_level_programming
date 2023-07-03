@@ -6,7 +6,7 @@
  * @b: the constent character to fill the mem with.
  * @n: the first bytes of memory to fill.
  *
- * Return_ it returns a pointer to the filled memory area.
+ * Return: it returns a pointer to the filled memory area.
  */
 
 char *_memset(char *s, char b, unsigned int n)
@@ -16,7 +16,7 @@ char *_memset(char *s, char b, unsigned int n)
 	j = 0;
 	while (j < n)
 	{
-		*((char *)s+j)= b;
+		*((char *) s + j) = b;
 		j++;
 	}
 	return (s);
