@@ -4,7 +4,7 @@
  * @s: the string
  * @accept: a string to match
  *
- * Return: it returns a pointer to the byte in s 
+ * Return: it returns a pointer to the byte in s
  * that matches one of the bytes in accept
  * or NULL if no such byte is found.
  */
