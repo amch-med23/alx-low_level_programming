@@ -20,7 +20,7 @@ int _sqrt_recursion(int n)
  * vol_sqrt_recursion - recurses to find the natural
  * square root of a given number.
  * @n: the number to calculate the sqaure root of.
- * @i: the iterator
+ * @j: the iterator
  *
  * Return: the resulting square root
  */
