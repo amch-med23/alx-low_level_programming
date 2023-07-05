@@ -35,5 +35,5 @@ int vol_prime(int n, int j)
 	{
 		return (0);
 	}
-	return (actual_prime(n, j - 1));
+	return (vol_prime(n, j - 1));
 }
