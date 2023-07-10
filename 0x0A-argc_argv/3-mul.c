@@ -1,16 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * main - prints the result of two integers
  * multiplication followed by a new line.
- * atoi - converts a string to integer.
  * @argc: the argument counter.
  * @argv: the arguments (the strings).
  *
  * Return: EXIT_SUCCESS.
  */
 
+/**
+ * atoi - converts a string to integer.
+ * @s: the string.
+ *
+ * Return: it returns an integer.
+ */
 int main(int argc, char *argv[])
 {
 	int argnum;
