@@ -22,7 +22,6 @@ int main(int argc, char *argv[])
 	if (argnum == 0)
 	{
 		printf("%d\n", zero);
-		exit(EXIT_SUCCESS);
 	}
 	while (i <= argnum)
 	{
@@ -44,5 +43,5 @@ int main(int argc, char *argv[])
 		i++;
 	}
 	printf("%d\n", finalres);
-	exit(EXIT_SUCCESS);
+	return(0);
 }
