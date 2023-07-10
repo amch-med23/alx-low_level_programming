@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - adds positive numbers give as arguments.
@@ -11,27 +12,29 @@
 
 int main(int argc, char *argv[])
 {
-	int argnum;
-	int i, zero;
-	int valhold, valhold2;
+	int i, argnum, j;
+	int valhold, valhold2 __attribute__ ((unused));
 	int finalres;
 
 	i = 1;
-	zero = 0;
 	argnum = argc - 1;
 	finalres = 0;
 	if (argnum == 0)
 	{
-		printf("%d\n", zero);
-		exit(EXIT_SUCCESS);
+		printf("%d\n", argnum);
+		return (0);
 	}
+	j = 0;
 	while (i <= argnum)
 	{
-		valhold2 = atoi(argv[i]);
-		if (valhold2 == 0)
+		while (argv[i][j] != '\0')
 		{
-			printf("Error\n");
-			return (1);
+			if(!isdigit(argv[i][j]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+			j++;
 		}
 		i++;
 	}
@@ -40,7 +43,7 @@ int main(int argc, char *argv[])
 	while (i <= argnum)
 	{
 		valhold = atoi(argv[i]);
-		if (valhold > 0)
+		if (valhold >= 0)
 		{
 			finalres += valhold;
 		}
