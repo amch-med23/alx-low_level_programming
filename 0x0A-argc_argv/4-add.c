@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 		valhold = atoi(argv[i]);
 		if (valhold > 0)
 		{
-			finalres += valhold; 
+			finalres += valhold;
 		}
 		i++;
 	}
