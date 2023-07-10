@@ -9,12 +9,6 @@
  * Return: EXIT_SUCCESS.
  */
 
-/**
- * atoi - converts a string to integer.
- * @s: the string.
- *
- * Return: it returns an integer.
- */
 int main(int argc, char *argv[])
 {
 	int argnum;
@@ -22,12 +16,12 @@ int main(int argc, char *argv[])
 	int res;
 
 	argnum = argc - 1;
-	if (argnum > 2 || argnum < 1)
+	if (argnum > 2 || argnum <= 1)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	else
+	else if (argnum == 2)
 	{
 		num1 = atoi(argv[1]);
 		num2 = atoi(argv[2]);
