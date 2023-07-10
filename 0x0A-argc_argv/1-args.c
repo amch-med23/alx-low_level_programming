@@ -11,6 +11,9 @@
 
 int main(int argc, char *argv[] __attribute__ ((unused)))
 {
-	printf("%d\n", argc);
+	int res;
+
+	res = argc - 1;
+	printf("%d\n", res);
 	exit(EXIT_SUCCESS);
 }
