@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - prints the result of two integers
  * multiplication followed by a new line.
  * @argc: the argument counter.
  * @argv: the arguments (the strings).
  *
- * Return: EXIT_SUCCESS.
+ * Return: (0) or (1)
  */
 
 int main(int argc, char *argv[])
@@ -25,5 +26,5 @@ int main(int argc, char *argv[])
 	num2 = atoi(argv[2]);
 	res = num1 * num2;
 	printf("%d\n", res);
-	exit(EXIT_SUCCESS);
+	return (0);
 }
