@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-int atoi(const char *str);
 
 /**
  * main - prints the result of two integers
@@ -9,7 +8,7 @@ int atoi(const char *str);
  * @argc: the argument counter.
  * @argv: the arguments (the strings).
  *
- * Return: (0) or (1)
+ * Return: EXIT_SUCCESS.
  */
 
 int main(int argc, char *argv[])
@@ -24,9 +23,12 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
-	res = num1 * num2;
-	printf("%d\n", res);
-	return (0);
+	else
+	{
+		num1 = atoi(argv[1]);
+		num2 = atoi(argv[2]);
+		res = num1 * num2;
+		printf("%d\n", res);
+	}
+	exit(EXIT_SUCCESS);
 }
