@@ -13,7 +13,6 @@
 int main(int argc, char *argv[])
 {
 	int argnum;
-	int num1, num2;
 	int res;
 
 	argnum = argc - 1;
@@ -22,9 +21,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
-	res = num1 * num2;
+	res = argv[1] * argv[2];
 	printf("%d\n", res);
 	return (0);
 }
