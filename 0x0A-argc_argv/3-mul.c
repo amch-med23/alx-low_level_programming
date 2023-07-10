@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+int atoi(const char *str);
 
 /**
  * main - prints the result of two integers
  * multiplication followed by a new line.
+ * atoi - converts a string to integer.
  * @argc: the argument counter.
  * @argv: the arguments (the strings).
  *
@@ -13,6 +15,7 @@
 int main(int argc, char *argv[])
 {
 	int argnum;
+	int num1, num2;
 	int res;
 
 	argnum = argc - 1;
@@ -21,7 +24,9 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	res = argv[1] * argv[2];
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+	res = num1 * num2;
 	printf("%d\n", res);
 	return (0);
 }
