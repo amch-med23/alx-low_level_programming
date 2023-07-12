@@ -23,6 +23,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	while (a < ac)
 	{
+		b = 0;
 		while (av[a][b] != '\0')
 		{
 			count++;
