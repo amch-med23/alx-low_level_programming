@@ -14,7 +14,7 @@ char *_strdup(char *str)
 	char *dest;
 	int size, i __attribute__ ((unused));
 
-	if (str == NULL )
+	if (str == NULL)
 	{
 		return (NULL);
 	}
@@ -29,6 +29,6 @@ char *_strdup(char *str)
 	{
 		*(dest + i) = *(str + i);
 		i++;
-	} 
+	}
 	return (dest);
 }
