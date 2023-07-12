@@ -15,19 +15,23 @@ char *str_concat(char *s1, char *s2)
 	char *dest;
 	unsigned long int i;
 
-	sizeS1 = (int)strlen(s1);
-	sizeS2 = (int)strlen(s2);
-	totalsize = sizeS1 + sizeS2;
-	dest = malloc(sizeof(char) * totalsize + 1);
-	if (s1 == NULL && s2 == NULL)
+	sizeS1 = 0;
+	sizeS2 = 0;
+	while (s1 != NULL && s1[sizeS1])
 	{
-		dest = "\0";
+		sizeS1++;
 	}
+	while (s2 != NULL && s2[sizeS2])
+	{
+		sizeS2++;
+	}
+	totalsize = sizeS1 + sizeS2;
+	dest = malloc(sizeof(char) * totalsize);
 	if (dest == NULL)
 	{
-		return (NULL);
+		return NULL;
 	}
-	for (i = 0; i < sizeS1 + sizeS2; i++)
+	for (i = 0; i < totalsize; i++)
 	{
 		if (i < sizeS1)
 		{
