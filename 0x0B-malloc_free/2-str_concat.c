@@ -11,14 +11,18 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	long unsigned int totalsize, sizeS1, sizeS2;
+	unsigned long int totalsize, sizeS1, sizeS2;
 	char *dest;
-	long unsigned int i, j;
+	unsigned long int i, j;
 	
 	sizeS1 = (int)strlen(s1);
 	sizeS2 = (int)strlen(s2);
 	totalsize = sizeS1 + sizeS2;
-	dest = malloc(sizeof(char) * totalsize);
+	dest = malloc(sizeof(char) * totalsize + 1);
+	if (s1 == NULL && s2 == NULL)
+	{
+		dest = "";
+	}
 	if (dest == NULL)
 	{
 		return (NULL);
