@@ -13,40 +13,37 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned long int sizeS1, sizenS2, totalsize;
+	unsigned long int sizeS1, sizeS2, totalsize __attribute__ ((unused));
 	char *dest;
 	unsigned long int i, j;
 
-	if (n >= strlen(s2))
-		n = strlen(s2);
-	sizeS1 = 0;
-	sizenS2 = 0;
-	while (s1 != NULL && s1[sizeS1])
-	{
+	sizeS1 = 0; 
+	sizeS2 = 0;
+	while (s1 && s1[sizeS1])
 		sizeS1++;
-	}
-	while (s2 != NULL && s2[sizenS2])
-	{
-		sizenS2++;
-	}
-	totalsize = sizeS1 + sizenS2;
-	dest = malloc(sizeof(char) * (totalsize + 1));
-	if (dest == NULL)
+	while (s2 && s2[sizeS2])
+		sizeS2++;
+	if (n < strlen(s2))
+		dest = malloc(sizeof(char) * (sizeS1 + n + 1));
+	else
+		dest = malloc(sizeof(char) * (sizeS2 + sizeS1 + 1));
+	if (dest == NULL)     
 		return (NULL);
 	i = 0;
-	while (i < sizeS1 && s1[i] != '\0')
+	while (i < sizeS1)
 	{
 		dest[i] = s1[i];
 		i++;
 	}
 	j = 0;
-	while (j < sizenS2)
+	while (n < sizeS2 && i < (sizeS1 + n))
 	{
-		if (j < n)
-		{
-			dest[i + j] = s2[j];
-		}
-		j++;
+		dest[i++] = s2[j++];
 	}
+	while (n >= sizeS2 && i < (sizeS1 + sizeS2))
+	{
+		dest[i++] = s2[j];
+	}
+	dest[i] = '\0';
 	return (dest);
 }
