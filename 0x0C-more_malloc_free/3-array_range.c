@@ -23,7 +23,7 @@ int *array_range(int min, int max)
 	if (!dest)
 		return (NULL);
 	i = 0;
-	while (i <= size)
+	while (i <= --size)
 	{
 		dest[i] = min + i;
 		i++;
