@@ -42,7 +42,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	while (n >= sizeS2 && i < (sizeS1 + sizeS2))
 	{
-		dest[i++] = s2[j];
+		dest[i++] = s2[j++];
 	}
 	dest[i] = '\0';
 	return (dest);
