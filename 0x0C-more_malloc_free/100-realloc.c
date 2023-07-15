@@ -1,64 +1,64 @@
 #include "main.h"
+#include <stddef.h>
 #include <stdlib.h>
+
 /**
- * _realloc - a function to reallocates a block of memory.
- * @ptr: the old memory address.
- * @old_size: the old ptr size.
- * @new_size: the new size.
- *
- * Return: it returns a pointer to the newelly 
- * allocated memory.
+ * _memcpy - copies area of memory
+ * @dest: destination
+ * @src: source
+ * @n: number of bytes to be copie
+ *d
+ * Return: a pointer to dest
  */
 
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+	unsigned int counter;
+
+	for (counter = 0; counter < n; counter++)
+	{
+		dest[counter] = src[counter];
+	}
+	return (dest);
+}
+
+/**
+ * _realloc - reallocates a memory block using malloc() and free()
+ * @ptr: previously allocated memory
+ * @old_size: size of the previously allocated memory
+ * @new_size: size of the new memory
+ *
+ * Return: pointer to the newly resized block of memory
+ */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-        int *dest;
-	unsigned int sizedefer, i;
-	int *ptr1;
+	unsigned int use_size;
+	void *dest;
 
-	ptr1 = ptr;
-	if (new_size == old_size)
-	{
-		free(ptr);
-		return (ptr);
-	}
 	if (ptr == NULL)
-	{
-		dest = malloc(sizeof(unsigned int) * new_size);
-		free(dest);
-		return (dest);
-	}
-	dest = malloc(sizeof(unsigned int) * new_size);
-	/**
-	 * initializing the memory if  new_size > old_size.
-	 */
-	if (new_size > old_size)
-	{
-		sizedefer = new_size - old_size;
-	}
-	if (new_size == 0 && ptr)
+		return (malloc(new_size));
+
+	if (new_size == 0)
 	{
 		free(ptr);
 		return (NULL);
 	}
-	/**
-	 * assigning the elements of ptr to dest until oldsize
-	 */
-	i = 0;
-	while (i <= old_size && ptr)
-	{
-		dest[i] = ptr1[i];
-		i++;
-	}
-	/**
-	 * assigning zeros to size deffer.
-	 */
-	while (i <= sizedefer && sizedefer > 0)
-	{
-		dest[i] = 0;
-		i++;
-	}
-	free(ptr1);
-	free(dest);
+
+	if (new_size == old_size)
+		return (ptr);
+
+	dest = malloc(new_size);
+	if (dest == NULL)
+		return (NULL);
+
+	if (old_size < new_size)
+		use_size = old_size;
+	else
+		use_size = new_size;
+
+	_memcpy(dest, ptr, use_size);
+
+	free(ptr);
+
 	return (dest);
 }
