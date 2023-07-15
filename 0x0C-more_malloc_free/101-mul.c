@@ -49,7 +49,7 @@ void mul(char *num1, char *num2)
 	int *result = calloc(len1 + len2, sizeof(int));
 
 	if (result == NULL)
-		print_error();
+		print_err();
 
 	for (i = len1 - 1; i >= 0; i--)
 	{
