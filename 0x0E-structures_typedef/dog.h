@@ -12,6 +12,14 @@ typedef struct dog
 	float age;
 	char *owner;
 } dog;
-
+/**
+ * init_dog - a function that initializes the dog elements.
+ * @d: 1
+ * @name: 2
+ * @age: 3
+ * @owner: 4
+ *
+ * Return: nothing.
+ */
 void init_dog(struct dog *d, char *name, float age, char *owner);
 #endif
