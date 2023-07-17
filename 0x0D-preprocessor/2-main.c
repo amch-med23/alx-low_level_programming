@@ -9,5 +9,5 @@
 int main(void)
 {
 	printf("%s\n", __FILE__);
-	exit (EXIT_SUCCESS);
+	exit(EXIT_SUCCESS);
 }
