@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include "dog.h"
 /**
  * init_dog - a function to initialyze the elements
