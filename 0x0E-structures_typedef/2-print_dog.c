@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * print_dog - prints the elements of the 
+ * print_dog - prints the elements of the
  * dog struct.
  * @d: the pointer to the dog struct.
  *
@@ -10,7 +10,7 @@
  */
 
 void print_dog(struct dog *d)
-{	
+{
 	if (d == NULL)
 		return;
 	if (d->name == NULL)
