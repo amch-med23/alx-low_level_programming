@@ -1,5 +1,7 @@
 #include "dog.h"
 #include <stddef.h>
+#include <stdlib.h>
+
 /**
  * new_dog - creates a new dog strut.
  * @name: the name.
@@ -16,8 +18,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	int ownerLength = 0;
 	int nameLength = 0;
 
-	while (name[nameLegth])
-		nameLegth++;
+	while (name[nameLength])
+		nameLength++;
 	while (owner[ownerLength])
 		ownerLength++;
 	ndog = malloc(sizeof(dog_t));
