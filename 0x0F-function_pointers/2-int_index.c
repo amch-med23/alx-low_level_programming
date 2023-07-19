@@ -27,8 +27,6 @@ int int_index(int *array, int size, int (*com)(int))
 		{
 			return (element);
 		}
-		else if (!(com(array[element])) && element == size)
-			return (-1);
 	}
-	exit(EXIT_SUCCESS);
+	return (-1)
 }
