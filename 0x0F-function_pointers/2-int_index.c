@@ -17,7 +17,7 @@ int int_index(int *array, int size, int (*com)(int))
 
 	if (array == NULL || com == NULL)
 	{
-		exit(EXIT_FAILURE);
+		return (-1);
 	}
 	if (size <= 0)
 		return (-1);
