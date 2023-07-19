@@ -6,7 +6,7 @@
  * element found.
  * @array: the given array.
  * @size: the array size.
- * @cmp: the function to use.
+ * @com: the function to use.
  *
  * Return: return and integer.
  */
