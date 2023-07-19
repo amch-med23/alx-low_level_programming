@@ -28,5 +28,5 @@ int int_index(int *array, int size, int (*com)(int))
 			return (element);
 		}
 	}
-	return (-1)
+	return (-1);
 }
