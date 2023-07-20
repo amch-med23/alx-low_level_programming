@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int input1, input2;
-	char *operation;
+	char *op;
 
 	if (argc != 4)
 	{
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	}
 
 	input1 = atoi(argv[1]);
-	operation = argv[2];
+	op = argv[2];
 	input2 = atoi(argv[3]);
 
 	if (get_op_func(op) == NULL || op[1] != '\0')
@@ -29,8 +29,8 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	if ((*operation == '/' && input2 == 0) ||
-	    (*operation == '%' && input2 == 0))
+	if ((*op == '/' && input2 == 0) ||
+	    (*op == '%' && input2 == 0))
 	{
 		printf("Error\n");
 		exit(100);
