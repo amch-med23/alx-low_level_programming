@@ -9,5 +9,35 @@
  */
 int main(int argc, char *argv[])
 {
+	int bnumer;
+	int counter;
+	char *array;
+
+	if (argc != 2)
+	{
+		printf("Error\n");
+		exit(1);
+	}
+
+	bnumber = atoi(argv[1]);
+
+	if (bnumber < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
+
+	array = (char *)main;
+	counter = 0;
+	while (counter < bnumer)
+	{
+		if (counter == (bnumber - 1))
+		{
+			printf("%02hhx\n", array[counter]);
+			break;
+		}
+		printf("%02hhx ", array[counter]);
+		counter++;
+	}
 	exit(EXIT_SUCCESS);
 }
