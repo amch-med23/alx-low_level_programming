@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int bnumer;
+	int bnumber;
 	int counter;
 	char *array;
 
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 
 	array = (char *)main;
 	counter = 0;
-	while (counter < bnumer)
+	while (counter < bnumber)
 	{
 		if (counter == (bnumber - 1))
 		{
