@@ -1,11 +1,11 @@
 #include "variadic_functions.h"
 #include <stdio.h>
-#include <stdlib.h>
 #include <stdarg.h>
 /**
  * print_strings - a function that prints strings.
  * @separator: the separator string.
  * @n: the arguments numbers.
+ * @...: a variable number of arguments.
  *
  * Return: nothing (void).
  */
