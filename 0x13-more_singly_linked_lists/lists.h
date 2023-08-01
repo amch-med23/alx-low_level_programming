@@ -34,5 +34,8 @@ listint_t *reverse_listint(listint_t **head);
 size_t print_listint_safe(const listint_t *head);
 size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
-
+/* this is used in the file 101 */
+size_t listint_len_loo(const listint_t *head);
+/* this is used in the file 102 */
+size_t listint_count_loo(listint_t *head);
 #endif
