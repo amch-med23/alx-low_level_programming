@@ -14,7 +14,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	listint_t *prevNode;
 	unsigned int i, length;
 
-	length = len_listint(*head);
+	length = listint_len(*head);
 	prevNode = NULL;
 	newNode = NULL;
 	i = 0;
@@ -51,12 +51,12 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 }
 
 /**
- * len_listint - counts the number of nodes in a given linked list
+ * listint_len - counts the number of nodes in a given linked list
  * @h: the given head of the list
  *
  * Return: the number of nodes.
  */
-size_t len_listint(const listint_t *h)
+size_t listint_len(const listint_t *h)
 {
 	const listint_t *ptr;
 	size_t counter;
