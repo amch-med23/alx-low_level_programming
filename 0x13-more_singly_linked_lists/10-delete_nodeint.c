@@ -10,14 +10,14 @@
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	unsigned int i;
-	int list_len;
+	unsigned int list_len;
 	listint_t *oldNode = NULL;
 	listint_t *prevNode = NULL;
 
 	prevNode = NULL;
 	oldNode = NULL;
 	i = 0;
-	list_len = len_listint(*head);
+	list_len = listint_len(*head);
 	if ((index > list_len) || (list_len == 0))
 	{
 		return (-1);
@@ -46,12 +46,12 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 }
 
 /**
- * len_listint - counts the number of nodes
+ * listint_len - counts the number of nodes
  * @h: the head of the given list.
  *
  * Return: the number of nodes.
  */
-int len_listint(const listint_t *h)
+size_t listint_len(const listint_t *h)
 {
 	const listint_t *ptr;
 	int counter;
