@@ -11,9 +11,8 @@ size_t listint_len_loo(const listint_t *head)
 {
 	const listint_t *vrc;
 	const listint_t *vtr;
-	size_t nodes;
+	size_t nodes = 1;
 
-	nodes = 1;
 	if (head == NULL || head->next == NULL)
 	{
 		return (0);
@@ -59,27 +58,23 @@ size_t listint_len_loo(const listint_t *head)
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t nodes;
-	size_t index;
+	size_t nodes, index = 0;
 
 	nodes = listint_len_loo(head);
-	index = 0;
 	if (nodes == 0)
 	{
-		while (head != NULL)
+		for (; head != NULL; nodes++)
 		{
 			printf("[%p] %d\n", (void *)head, head->n);
 			head = head->next;
-			nodes++;
 		}
 	}
 	else
 	{
-		while (index < nodes)
+		for (index = 0; index < nodes; index++)
 		{
 			printf("[%p] %d\n", (void *)head, head->n);
 			head = head->next;
-			index++;
 		}
 
 		printf("-> [%p] %d\n", (void *)head, head->n);
