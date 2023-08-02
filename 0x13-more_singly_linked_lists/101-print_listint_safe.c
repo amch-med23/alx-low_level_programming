@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
  * listint_len_loo - Counts the number of nodes in a linked list.
  * @head: A pointer to the head of the list to check.
@@ -7,44 +6,42 @@
  * Return: (0) if the list is not looped, Otherwise - the number
  * of the unique nodes in the list.
  */
+
 size_t listint_len_loo(const listint_t *head)
 {
-	const listint_t *vrc;
-	const listint_t *vtr;
+	const listint_t *tor, *ha;
 	size_t nodes = 1;
 
 	if (head == NULL || head->next == NULL)
-	{
 		return (0);
-	}
 
-	vrc = head->next;
-	vtr = (head->next)->next;
+	tor = head->next;
+	ha = (head->next)->next;
 
-	while (vtr)
+	while (ha)
 	{
-		if (vrc == vtr)
+		if (tor == ha)
 		{
-			vrc = vtr;
-			while (vrc != vtr)
+			tor = head;
+			while (tor != ha)
 			{
 				nodes++;
-				vrc = vrc->next;
-				vtr = vtr->next;
+				tor = tor->next;
+				ha = ha->next;
 			}
 
-			vrc = vrc->next;
-			while (vrc != vtr)
+			tor = tor->next;
+			while (tor != ha)
 			{
 				nodes++;
-				vrc = vrc->next;
+				tor = tor->next;
 			}
 
 			return (nodes);
 		}
 
-		vrc = vrc->next;
-		vtr = (vtr->next)->next;
+		tor = tor->next;
+		ha = (ha->next)->next;
 	}
 
 	return (0);
@@ -56,6 +53,7 @@ size_t listint_len_loo(const listint_t *head)
  *
  * Return: the number of nodes in the list.
  */
+
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t nodes, index = 0;
@@ -69,6 +67,7 @@ size_t print_listint_safe(const listint_t *head)
 			head = head->next;
 		}
 	}
+
 	else
 	{
 		for (index = 0; index < nodes; index++)
