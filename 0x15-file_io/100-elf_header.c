@@ -6,8 +6,8 @@
 
 #define MAGIC_NUM_SIZE 4
 
-void display_elf_header(unsigned char *header);
-int validate_elf_header(unsigned char *header);
+void show_elf_header(unsigned char *header);
+int verify_elf_header(unsigned char *header);
 
 /**
  * main - the entry point.
@@ -27,12 +27,12 @@ int main(int argc, char **argv)
 		return (98);
 	}
 	f_des = open(argv[1], O_RDONLY);
-	if (fd == -1)
+	if (f_des == -1)
 	{
 		perror("Error");
 		return (98);
 	}
-	if (read(fd, header, sizeof(header)) != sizeof(header))
+	if (read(f_des, header, sizeof(header)) != sizeof(header))
 	{
 		perror("Error");
 		close(f_des);
