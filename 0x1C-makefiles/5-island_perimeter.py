@@ -1,31 +1,19 @@
 #!/usr/bin/python3
-""" Module to calculate the perimiter of the island in a grid """
-
-
-def num_water_ngbr(grid, x, y):
-    """ calculates the numberof water neighbors a cell has inside a grid. """
-
-    n = 0
-
-    if x <= 0 or not grid[x - 1][y]:
-        n += 1
-    if y <= 0 or not grid[x][y - 1]:
-        n += 1
-    if x >= len(grid) - 1 or not grid[x + 1][y]:
-        n += 1
-    if y >= len(grid) - 1 or not grid[x][y + 1]:
-        n += 1
-
-    return n
+""" this module calculates the perimeter of a given grid"""
 
 
 def island_perimeter(grid):
-    """ Returns the perimiter of the island in grid. """
-
-    perimeter = 0
-    for i in range(len(grid)):
-        for j in range(len(grid[i])):
-            if grid[i][j]:
-                perimeter += num_water_ngbr(grid, i, j)
-
-    return perimeter
+    """to get the len of the perimeter of island"""
+    n = 0
+    for y, row in enumerate(grid):
+        for x, cell in enumerate(row):
+            if cell == 1:
+                if y == 0 or grid[y - 1][x] == 0:
+                    n += 1
+                if y == len(grid) - 1 or grid[y + 1][x] == 0:
+                    n += 1
+                if x == 0 or grid[y][x - 1] == 0:
+                    n += 1
+                if x == len(row) - 1 or grid[y][x + 1] == 0:
+                    n += 1
+    return n
